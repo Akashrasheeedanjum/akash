@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact{% endblock title %}
+
+
+{% block body %}
+<div class="container-fluid my=0"> 
+<img src="https://source.unsplash.com/1200x400/?phone,contact" class="d-block w-100 my=0 mx-0 py-0 " alt="...">
+<h1 class="text-center" >Contact US</h1>
+</div>
+
+<div class="container">
+ <form class="form-group">
+  <div class="mb-3">
+   <label for="exampleFormControlInput1" class="form-label">Name</label>
+   <input type="text" class="form-control" id="name" name="name" placeholder="Enter your Name">
+  </div>
+  <div class="mb-3">
+   <label for="exampleFormControlInput1" class="form-label">Address</label>
+   <input type="text" class="form-control" id="address" name="address" placeholder="Enter your Address">
+  </div>
+  <div class="mb-3">
+   <label for="exampleFormControlInput1" class="form-label">Email Address</label>
+   <input type="email" class="form-control" id="email" name="email" placeholder="Enter your Email Address">
+  </div>
+  <div class="mb-3">
+   <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
+   <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter your Email Address">
+  </div>
+  <div class="mb-3">
+   <label for="desc" class="form-label">Tell me Bout what you want to Contact me for...</label>
+   <textarea class="form-control" id="desc" name="desc" rows="3" ></textarea>
+  </div> 
+  <button class="btn btn-primary" type="submit">Submit</button>
+ </form>
+
+</div>
+
+
+{% endblock body %}This is my body
